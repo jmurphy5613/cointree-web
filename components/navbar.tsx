@@ -19,7 +19,7 @@ const Navbar = () => {
             <div>
                 <a href='/search'>Companies</a>
             </div>
-            <h2 className={styles.wallet}>{wallet}</h2>
+            <h2 className={styles.wallet}>{wallet.substring(0, 7)}...</h2>
         </div>
     )
 }
