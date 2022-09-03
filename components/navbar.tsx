@@ -17,9 +17,10 @@ const Navbar = () => {
         <div className={styles.container}>
             <h3 className={styles.subtitle}>CoinTree</h3>
             <div>
-                <a href="/app">Home</a>
+                <a href="/">Home</a>
                 <a href='/search' style={{ marginLeft: '1rem' }}>Search</a>
                 <a href='/companies' style={{ marginLeft: '1rem' }}>Companies</a>
+                <a href='/deposit' style={{ marginLeft: '1rem' }}>Deposit</a>
             </div>
             <h2 className={styles.wallet}>{wallet.substring(0, 7)}...</h2>
         </div>
