@@ -1,5 +1,6 @@
 import styles from '../styles/App.module.css'
-import Navbar from '../components/navbar';
+import Navbar from '../components/navbar'
+import { useRouter } from 'next/router'
 
 const App = () => {
 
@@ -12,12 +13,16 @@ const App = () => {
         "company": "Tesla",
     }
 
+    const router = useRouter()
+
     return (
         <>     
             <Navbar />   
             <div className={styles.container}>
                 <h1 className={styles.title}>Live Feed</h1>
-                <div className={styles.transaction}>
+                <div className={styles.transaction} onClick={() => {
+                    router.push('/item-profile')
+                }}>
                     <h3 className={styles.block}>{nftTransaction.block}</h3>
                     <h3 className={styles.company}>{nftTransaction.company}</h3>
                     <h3 className={styles.amount}>${nftTransaction.amount}</h3>

@@ -1,0 +1,61 @@
+.container {
+    height: 85vh;
+    width: 100vw;
+    background-color: #111;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    background-image: url('../public/ev.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    width: 450px;
+    border-radius: 2rem;
+    margin-right: 2rem;
+}
+
+.info {
+    margin-left: 2rem;
+    width: 40%;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.subtitle {
+    font-size: 2rem;
+    color: #0070f3;
+    font-weight: 300;
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.description {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+.view-on-opensea {
+    background-color: #0070f3;
+    color: #fff;
+    border: none;
+    width: 12rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    font-weight: 300;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}

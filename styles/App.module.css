@@ -25,6 +25,10 @@
     padding-right: 2rem;
     padding-left: 2rem;
 }
+.transaction:hover {
+    background-color: #333;
+    cursor: pointer;
+}
 
 .block {
     color: #0070f3;
