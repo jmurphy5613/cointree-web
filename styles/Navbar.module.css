@@ -1,0 +1,15 @@
+.container {
+    width: 100vw;
+    height: 15vh;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+}
+
+.subtitle {
+    font-size: 2rem;
+    color: #0070f3;
+    font-weight: 300;
+    margin-left: 3rem;
+    width: 80%;
+}
