@@ -17,7 +17,8 @@ const Navbar = () => {
         <div className={styles.container}>
             <h3 className={styles.subtitle}>Cointree</h3>
             <div>
-                <a href='/search'>Companies</a>
+                <a href='/search'>Search</a>
+                <a href='/companies' style={{ marginLeft: '1rem' }}>Companies</a>
             </div>
             <h2 className={styles.wallet}>{wallet.substring(0, 7)}...</h2>
         </div>
