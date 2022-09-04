@@ -42,7 +42,7 @@ const Home: NextPage = () => {
             />
           </span>
         </h1>
-        {walletConnected ? <button className={styles["connect-wallet"]} onClick={() => router.push('/livefeed')}>Open App</button> : <button className={styles["connect-wallet"]} onClick={connectWallet}>Connect Wallet</button>}
+        {walletConnected ? <button className={styles["connect-wallet"]} onClick={() => router.push('/deposit')}>Open App</button> : <button className={styles["connect-wallet"]} onClick={connectWallet}>Connect Wallet</button>}
       </div>
 
     </div>
