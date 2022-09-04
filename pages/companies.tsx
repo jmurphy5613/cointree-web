@@ -66,9 +66,10 @@ const Companies = () => {
     }
 
     const getCurrentEtherPrice = async () => {
-        const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd')
+        //get current price of MATIC
+        const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=matic-network&vs_currencies=usd')
         const data = await response.json()
-        setCurrenctMaticPrice(data.ethereum.usd)
+        setCurrenctMaticPrice(data['matic-network'].usd)
     }
 
     const filteredCompanies = companies.filter((company) => {
@@ -79,7 +80,7 @@ const Companies = () => {
         <>
             <Navbar />
             <div className={styles.container}>
-                <h1 className={styles.title}>{accountBalance} Ether Locked</h1>
+                <h1 className={styles.title}>{accountBalance} Matic Locked</h1>
                 <input onChange={(e) => setSearchValue(e.target.value)} className={styles.input} placeholder='Company' />
                 <div className={styles.grid}>
                     {filteredCompanies.map((company, index) => {

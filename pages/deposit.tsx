@@ -10,7 +10,7 @@ declare var window:any
 
 const Deposit = () => {
 
-    const [amount, setAmount] = useState(0)
+    const [amount, setAmount] = useState<number>()
     const [companyName, setCompanyName] = useState('')
 
     const deposit = async () => {
@@ -23,6 +23,8 @@ const Deposit = () => {
         const contract = new ethers.Contract(vaultAddress, Vault.abi, signer)
 
         contract.createCompany(companyName, {value: ethers.utils.parseEther(amount.toString())})
+        setAmount(0)
+        setCompanyName('')
     }
 
     return (
@@ -31,10 +33,10 @@ const Deposit = () => {
             <div className={styles.container}>
                 <h1 className={styles.title}>Deposit</h1>
                 <div className={styles.form}>
-                    <input className={styles.input} onChange={(e) => {
+                    <input className={styles.input} value={companyName} onChange={(e) => {
                         setCompanyName(e.target.value)
                     }} type="text" placeholder="Company Name" />
-                    <input onChange={(e) => {
+                    <input value={amount} onChange={(e) => {
                         setAmount(e.target.value)
                     }} className={styles.input} type="text" placeholder="Amount" />
                     <button onClick={deposit} className={styles.button}>Transfer</button>

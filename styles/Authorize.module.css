@@ -7,3 +7,42 @@
     flex-direction: column;
     align-items: center;
 }
+
+.accept {
+    width: 12rem;
+    height: 3rem;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: #0070f3;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.reject {
+    width: 12rem;
+    height: 3rem;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: white;
+    color: black;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.button-container {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title {
+    font-size: 3rem;
+    padding-top: 3rem;
+    margin-top: 0;
+    color: #0070f3;
+}
